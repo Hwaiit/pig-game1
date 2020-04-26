@@ -35,7 +35,7 @@ document.querySelector('.btn-hold').addEventListener('click', function(){
     score[activePlayer] += roundScore;
     document.querySelector('#score-'+ activePlayer).textContent = score[activePlayer];
     roundScore = 0;
-    if(score[activePlayer] >= 20){
+    if(score[activePlayer] >= 100){
         document.querySelector('#name-'+activePlayer).innerHTML = 'WINNER!!';
         document.querySelector('.player-'+activePlayer+'-panel').classList.add('winner');
         document.querySelector('.player-'+activePlayer+'-panel').classList.remove('active');
